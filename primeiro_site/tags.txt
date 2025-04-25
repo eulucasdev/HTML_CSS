@@ -1,0 +1,52 @@
+tags e suas respectivas funções!
+
+ 
+
+<article> Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, como um post de um blog, por exemplo.
+<section> Define uma seção no documento. É normalmente utilizado para agrupar seções. Por exemplo: uma <section> poderia conter vários <article>. 
+<h1>, <h2>, <h3>, <h4>, <h5> e <h6> Apresenta a inserção de títulos ao longo da página. É uma boa prática que cada seção ou cada bloco de texto seja precedido por um título. Trata-se de uma tag hierárquica, logo, no título mais importante, deve ser usada a tag <h1>; no subtítulo seguinte, <h2>, e assim por diante. Além disso, uma página poderá conter várias <h1>, <h2>... <h6>. A exceção aqui fica por conta da tag <h1>, uma vez que é recomendado utilizar apenas uma em uma mesma página.
+<p> Aponta a inserção de parágrafos de texto.
+<pre> Aponta a inserção de um texto pré-formatado.
+<div> Aponta o agrupamento de algum tipo de conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica, embora não seja considerada semântica.
+<span> Apresenta semelhança com a <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+<a> Aponta a inserção de links.
+<br> Aponta a inserção de uma quebra de linha.
+<hr> Aponta a inserção de uma linha horizontal no documento. Normalmente, é utilizada quando se pretende alterar a temática de um texto.
+
+Tags de formatação <strong> e <em> vs <b> e <i>
+
+
+A última versão HTML ainda dá suporte a algumas tags direcionadas à formatação visual de conteúdo. Embora possam ser substituídas por CSS, quatro dessas tags merecem atenção especial:
+
+ 
+
+<b> Aplica o efeito de negrito em um texto.
+<strong> Aplica o efeito de negrito em um texto e o marca como importante.
+<i> Aplica o efeito de itálico em um texto.
+<em> Aplica o efeito de itálico e dá ênfase a um texto.
+
+O destaque que tais elementos merecem diz respeito à função semântica que as tags e exercem.
+
+
+É interessante notar que ambas produzem o mesmo efeito visual das tags <b> e <i>, respectivamente, em um texto, ou seja, marcam em negrito e/ou itálico. Entretanto, há uma diferença importante entre essas tags que vai além da visualização do texto no navegador pela maioria dos usuários. A função semântica é perceptível em dispositivos de leitura de tela, que transformam o texto em áudio, e normalmente são utilizados por pessoas com deficiência visual.
+
+
+Tags obsoletas
+
+A cada nova versão da HTML, novas tags são criadas, assim como antigas são descontinuadas. As tags descontinuadas, chamadas de obsoletas, embora ainda possam ter suporte em boa parte dos navegadores, devem ser evitadas pelos seguintes motivos:
+
+
+Porque, provavelmente, foram substituídas por novas tags, com melhor semântica.
+Por causa do risco de desconfigurarem o conteúdo da página, uma vez que os browsers podem deixar de suportá-las a qualquer momento.
+
+Veja alguns exemplos de tags obsoletas!
+
+ 
+
+<applet> Identifica a inclusão de um applet Java.
+<center> Centraliza horizontalmente o conteúdo de um bloco.
+<dir> Apresenta container para lista de diretórios ou arquivos.
+<font> Determina características relacionadas a fontes de um determinado elemento.
+<image> Apresenta relação ancestral com a tag <img>, que era usada nas primeiras versões HTML para a inserção de imagens.
+
+Atualmente consideradas obsoletas, as tags <center> e <font> ainda são usadas em muitas páginas HTML. Ambas se enquadram no conceito de que não é função da HTML cuidar da apresentação. Logo, as duas foram substituídas por propriedades CSS.
