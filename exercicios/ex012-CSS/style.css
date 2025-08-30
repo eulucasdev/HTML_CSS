@@ -1,0 +1,31 @@
+@charset "UTF-8";
+nav {
+    background-color: rgb(231, 231, 231);
+    color: rgb(61, 122, 72);
+    font-style: oblique;
+    font-family: monospace;
+    font-size: larger;
+}
+body{ 
+    background-color: lightgoldenrodyello;
+    color: chocolate;
+    font-size: 12pt;
+    font-family: Arial;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25pt;
+    color: blueviolet;
+}
+h3{
+    color: rgb(255, 79, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15pt;
+}

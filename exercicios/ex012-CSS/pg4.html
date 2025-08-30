@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: rgb(189, 252, 199);
+        }
+    </style>
+</head>
+    <header>
+        <h1>Sobre Mídias</h1>
+        <nav>
+            | <a href="pg3.html" target="_self" rel="next">ÁUDIOS</a>
+            | <a href="pg2.html" target="-self" rel="next">IMAGENS</a> 
+            | <a href="index.html" target="_self" rel="next">INÍCIO</a> 
+        </nav>
+        <hr>
+    </header>
+<body>
+    <h2>VÍDEOS</h2>
+    <h3>Vídeo em servidor próprio!</h3>
+    <video width="780" poster="imagens/limoes-capa.png" controls autoplay>
+        <source src="video/meu-video.m4v" type="video/webm">
+        <source src="video/meu-video.mp4" type="video/mp4">
+        <source src="video/meu-video.ogv" type="video/ogg">
+        <p>Não foi possível carregar o vídeo.</p>
+    </video>
+    <h3>Vídeo incorporado do YouTube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ve5Gz3n5mdo?si=nZTT0__YwutSXCo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+</body>
+</html>
