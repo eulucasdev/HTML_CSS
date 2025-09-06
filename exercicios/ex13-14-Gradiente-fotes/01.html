@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização&Tipografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <main>
+            <h1>1. Estilização Global e Tipografia Base</h1>
+            <h2>O que está acontecendo:</h2>
+            <div class="caixa-solida">
+                <pre><code>
+                    * {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+                </code></pre>
+            </div>
+            <p>
+                <ul>
+                <li><mark>*:</mark> É o seletor universal, que aplica o estilo a todos os elementos da página.</li>
+                <li><mark>font-family:</mark> Define a família de fontes que será usada no texto.</li>
+                <li><mark>Arial</mark>, <mark>Helvetica</mark> e <mark>sans-serif</mark> são fontes de texto. Aqui, o navegador tenta usar a primeira (Arial); se não estiver disponível, tenta a segunda (Helvetica) e por fim uma genérica (sans-serif).</li>
+                </ul>
+            </p>
+                <div class="caixa-solida">
+                    <pre><cod>
+                        body {
+                        background-image: linear-gradient(to top, #5c7764 10%, #12a804 );
+                        font-size: 1em;
+                        font-weight: 500;
+                        }
+                    </cod></pre>
+                </div>
+             <p>
+                <ul>
+                <li><mark>background-image:</mark> Usa um gradiente linear como imagem de fundo.</li>
+                <li><mark>linear-gradient(to top, ...)</mark> cria um degradê de baixo para cima com as cores especificadas.</li>
+                <li><mark>font-size: 1em:</mark> Define o tamanho da fonte relativo ao elemento pai (1em geralmente equivale a 16px).</li>
+                <li><mark>font-weight: 500:</mark> Define o peso (espessura) da fonte. Valores variam de 100 (fino) até 900 (bem grosso); 500 é semi-negrito.</li>
+                </ul>
+             </p>  
+        </main>
+</body>
+</html>
