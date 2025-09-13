@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes esternas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Honk&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+            font-family: 'Asia';
+            src: url('fontes/Hoshiko Satsuki.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face { 
+            font-family: 'ghot';
+            src: url('fontes/MorrisRomanBlack.otf') format('opentype'), url('fontes/MorrisRomanBlack.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Work Sans, Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color:black;
+        }
+
+        h1 {
+            font-family: Honk, serif;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-family: Honk, serif;
+            font-size: 2em;
+        }
+
+        .fontalt {
+            h2 {
+                font-family: 'Asia', 'Trebuchet MS';
+                font-size: 2em;
+                font-weight: normal;
+                font-style: normal;
+                color: azure;
+            }
+            p{
+                font-family: 'ghot', 'Impact';
+                font-size: 20px;
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Fontes Externas</h1>
+        <h2>Web servers</h2>
+        <h3>Importação de fontes online:</h3>
+        <div class="caixa-solida">
+        <pre><code>
+            @import url('https://fonts.googleapis.com/css2?
+            family=Honk&family=Work+Sans:ital,wght@0,100..
+            900;1,100..900&display=swap');
+        </code></pre>
+        </div>
+        <p><ul>
+            <li>@import → carrega estilos externos.</li>
+            <li>Aqui são importadas duas fontes do Google Fonts:</li>
+            <li><ul>
+                <li>Honk</li>
+                <li>Work Sans (com suporte a itálico e variações de peso entre 100–900).</li>
+            </ul></li>
+        </ul></p>
+        <h3>Aplicação das fontes</h3>
+        <div class="caixa-solida">
+        <pre><code>
+            body {
+                font-family: Work Sans, Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                color:black;
+            }
+        </code></pre>
+        </div>
+        <p><ul>
+           <li>O corpo do site usa Work Sans (importada do Google).</li>
+           <li>Caso não esteja disponível, cai para Arial → Helvetica → sans-serif.</li> 
+           <li>Tamanho fixo de 16px e cor padrão preta.</li>
+        </ul></p>
+        <h3>Estilização de títulos</h3>
+        <div class="caixa-solida">
+        <pre><code>
+            h1 {
+                font-family: Honk, serif;
+                font-size: 3em;
+            }
+            h2 {
+                font-family: Honk, serif;
+                font-size: 2em;
+            }
+        </code></pre></div>      
+        <p><ul>
+            <li>Tanto h1 quanto h2 usam a fonte Honk (do Google).</li>
+            <li>O serif é o fallback, caso a fonte falhe.</li>
+            <li>Tamanhos aumentados em relação ao corpo do texto (3em e 2em).</li>
+        </ul></p> 
+        <div class="fontalt">
+            <h2>Fontes Locais</h2>
+            <p>Definição de fontes locais:</p>
+            <div class="caixa-solida">
+            <pre><code>
+                @font-face {
+                    font-family: 'Asia';
+                    src: url('fontes/Hoshiko Satsuki.ttf') format('truetype');
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            </code></pre></div>
+        <p><ul>
+            <li><mark>@font-face</mark> → permite registrar uma fonte personalizada.</li>
+            <li><mark>font-family: 'Asia';</mark> → nome usado para aplicar a fonte no CSS.</li>
+            <li><mark>src: url(...) format(...) </mark>→ caminho do arquivo local e seu formato (TrueType).</li>
+            <li>Essa regra define a fonte Asia a partir de um arquivo .ttf localizado em fontes/.</li>
+        </ul></p>
+        <div class="caixa-solida">
+        <pre><code>
+            @font-face { 
+                font-family: 'ghot';
+                src: url('fontes/MorrisRomanBlack.otf') format('opentype'), 
+                    url('fontes/MorrisRomanBlack.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </code></pre></div>
+        <p><ul>
+            <li>Fonte chamada ghot.</li>
+            <li>Suporta dois formatos: .otf (OpenType) e .ttf (TrueType).</li>
+            <li>Ter mais de uma opção aumenta a compatibilidade entre navegadores.</li>
+        </ul></p>
+        <div class="caixa-solida">
+        <pre><code>
+            .fontalt {
+                h2 {
+                    font-family: 'Asia', 'Trebuchet MS';
+                    font-size: 2em;
+                    font-weight: normal;
+                    font-style: normal;
+                    color: azure;
+                }
+                p{
+                    font-family: 'ghot', 'Impact';
+                    font-size: 20px;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+        </code></pre></div> 
+        <p><ul>
+            <li>Dentro da classe .fontalt, são aplicadas fontes alternativas:</li>
+            <ul>
+                <li>h2: usa 'Asia' (local), se não existir cai para 'Trebuchet MS'.</li>
+                    <ul>
+                        <li>Texto azul-claro (azure) e tamanho de 2em.</li>
+                    </ul>
+                <li>p: usa 'ghot' (local), se não existir cai para 'Impact'.</li>
+                    <ul>
+                        <li>Tamanho fixo de 20px.</li>
+                    </ul>
+            </ul>
+            <li>O objetivo é variar a tipografia em partes específicas da página.</li>
+        </ul></p>  
+    </div>    
+    </main>
+        <div class="a-esquerda"><a href="03.html" target="_self" rel="prev">&lt 3 - Estética dos Textos</a></div>
+        <div class="a-direita"><a href="index.html" target="_self" rel="next">INÍCIO</a></div>
+</body>
+</html>
