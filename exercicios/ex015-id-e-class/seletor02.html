@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo: class e id</title>
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content:">>";
+            font-weight: lighter;
+        }
+
+        .especial::after {
+            content: "<<";
+            font-weight: lighter;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div > p {
+            display: none;             
+        }
+
+        div:hover > p {
+            display: block;
+            color:rgb(250, 225, 4);
+            background-color: rgb(110, 39, 177);
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Link</h1>
+    <p>
+        Para ver meu facebook acesse o 
+        <a href="https:facebook.com/AddEuAi">FaceBook</a>
+    </p>
+    <p>Se quiser acessar meu github entre aqui: 
+        <a href="https:githube.com/eulucasdev">GitHub</a> 
+    </p>
+    <p>
+        Para assistir meu canal no youtube acesse o 
+        <a href="https:youtube.com/@oliveiralucaseu" class="especial">YouTube</a>
+    </p>
+
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mause aqui
+        <p>SURPRESA!</p>
+    </div>
+    <p>Veja o conteúdo oculto aparecendo!</p>
+</body>
+</html>

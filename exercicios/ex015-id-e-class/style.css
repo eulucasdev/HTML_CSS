@@ -39,3 +39,7 @@ p#obs {
 .avancado {
     color: rgb(121, 59, 59);
 }
+
+.destaque {
+    background-color: azure;
+}
