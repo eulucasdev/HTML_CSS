@@ -16,11 +16,10 @@
             margin: 10px
         }
         nav{
-            background-color: rgb(0, 0, 0);
-            color: green;
+            background-color: rgb(100, 100, 100);
             padding: 3px;
+            box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.747)
         }
-
         nav > a {
             text-decoration: none;
             color: goldenrod;
@@ -28,16 +27,20 @@
             margin-right: 30px;
         }
         nav > a:hover {
-            text-decoration: underline;
+            box-shadow:inset -2px -2px 5px rgba(218, 165, 32, 0.795)
         }
         main {
             background-color: white;
             padding: 10px;
-            margin: 10px
+            margin: 10px;
+            border-radius: 12px;
         }
         article{
             background-color: lightgray;
+            margin: 0px 0px 20px 0px;
             padding: 5px;
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.562);
+            border-radius: 25px 0px 25px 0px;
         }
         article > aside {
             background-color: rgb(133, 133, 133);
@@ -46,10 +49,13 @@
             background-color: black;
             color: goldenrod;
             text-align: center;
-            padding: 1px;
+            padding: 4px;
             margin: 0px;
         }
-     
+        footer > p {
+            margin: 0px;
+        }
+
     </style>
 </head>
 <body>
@@ -74,9 +80,10 @@
                 <aside>
                     <p>Artigo escrito por Anônimo Silva</p>
                 </aside>
-            </article>
+                </article>
             <article>
-
+                <h1>Outras notícias</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, libero quas blanditiis, eligendi ea saepe debitis aperiam quo corporis quae omnis id tempora amet nemo earum praesentium ullam illum expedita.</p>
             </article>
         </section>
 
