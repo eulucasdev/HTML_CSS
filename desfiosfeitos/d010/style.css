@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+header{
+    background-image: linear-gradient(#49ff80 10%, #226e1b);
+    text-align: center;
+    color: white;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+header > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    border: 8px;
+    padding: 5px;
+    margin: 3px;
+}
+
+header > p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
+nav{
+    padding: 3px;
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.747);
+    text-align: left;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-right: 30px;
+}
+
+nav > a:hover { 
+    box-shadow:inset 3px 3px 5px rgb(90, 255, 57)
+}
+
+.boxcenter{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 75%;
+    padding: 3px 5px 3px 5px;
+    margin: auto;
+    text-align: center;    
+}
+
+body{
+    background-color: rgb(43, 184, 8);
+    color: black
+}
