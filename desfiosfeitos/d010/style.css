@@ -1,17 +1,23 @@
 @charset "UTF-8";
+@font-face{
+    font-family: 'Idroid';
+    src:url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 header{
-    background-image: linear-gradient(#49ff80 10%, #226e1b);
+    background-image: linear-gradient(#4ce03fd0 10%, #226e1b);
     text-align: center;
     color: white;
     height: auto;
     width: auto;
-    margin: auto;
+    
 }
 
 header > h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 45px;
+    font-size: 35px;
     border: 8px;
     padding: 5px;
     margin: 3px;
@@ -21,6 +27,7 @@ header > p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: small;
+    text-align: center;
 }
 
 nav{
@@ -50,6 +57,42 @@ nav > a:hover {
 }
 
 body{
-    background-color: rgb(43, 184, 8);
+    background-color: rgb(104, 199, 136);
     color: black
+}
+
+strong{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #226e1b;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #226e1b;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: Idroid, Arial, Helvetica, sans-serif;
+    color: #226e1b;
+}
+
+h3{
+    font-family: Idroid, Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-indent: 8px;
+    color: #226e1b;
+    padding: 5px;
+    margin-left: 15px;
+    background-image: linear-gradient(to right,rgba(120, 245, 120, 0.678), rgba(245, 240, 240, 0.507))
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    text-indent: 15px;
+    margin: 10px;
 }
