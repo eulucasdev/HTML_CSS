@@ -47,6 +47,11 @@ nav > a:hover {
     box-shadow:inset 3px 3px 5px rgb(90, 255, 57)
 }
 
+#boxdefundo{
+    background-color: #226e1b;
+    padding: 15px;
+}
+
 .boxcenter{
     background-color: rgb(255, 255, 255);
     height: auto;
@@ -96,3 +101,37 @@ p {
     text-indent: 15px;
     margin: 10px;
 }
+ul{
+    columns: 2;
+    list-style-type: none;
+    text-align: left;
+}
+
+ul > li::before {
+    content: "✔️";
+}
+
+#caixa{
+    background-color: rgb(165, 245, 185);
+    padding: 5px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    background-color: rgb(126, 185, 99);
+    margin: -5px;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+footer > p{
+    background-color: #226e1b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-align: center;
+
+}
+
