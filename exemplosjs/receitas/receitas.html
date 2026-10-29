@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Receitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-warning" onload="preencheCatalogo()">
+    <div class="container-fluid p-4">
+        <h1 class="mb-4 text-center">Catálogo de Receitas</h1>
+        <div id="pnlCatalogo" class="d-flex flex-wrap justify-content-center gap-3"></div>
+    </div>
+
+    <script>
+
+        const receitas = [
+            {
+                titulo: "Omelete Rápido",
+                imagem: "imagens/omelete.png",
+                ingredientes: ["2 Ovos", "Sal a gosto", "Pimenta do reino", "1 colher de manteiga", "Queijo ralado"],
+                preparo: "Bata os ovos com o sal e a pimenta. Derreta a manteiga em uma frigideira, adicione os ovos e doure dos dois lados. Polvilhe queijo por cima."
+            },
+            {
+                titulo: "Bolo de Caneca",
+                imagem: "imagens/bolo.png",
+                ingredientes: ["1 Ovo", "3 colheres de sopa de açúcar", "4 colheres de sopa de farinha de trigo", "2 colheres de achocolatado", "1 colher de óleo", "3 colheres de leite", "1 pitada de fermento"],
+                preparo: "Misture todos os ingredientes diretamente dentro de uma caneca até obter uma massa homogênea. Leve ao micro-ondas por 3 minutos em potência máxima."
+            },
+            {
+                titulo: "Vitamina de Banana",
+                imagem: "imagens/vitamina.png",
+                ingredientes: ["2 Bananas prata", "300ml de Leite", "1 colher de açúcar ou adoçante", "Gelo a gosto"],
+                preparo: "Descasque as bananas, pique em rodelas e coloque no liquidificador junto com o leite e o açúcar. Bata por 1 minuto até ficar cremoso. Sirva com gelo."
+            }
+        ];
+
+        function getListaIngredientes(rec) {
+            let texto = "<ul>";
+            texto += rec.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).reduce((acc, curr) => acc + curr, "");
+            texto += "</ul>";
+            return texto;
+        }
+
+        function getCard(rec) {
+            return `
+                <div class="card" style="width: 250px;">
+                    <img src="${rec.imagem}" class="card-img-top" alt="${rec.titulo}">
+                    <div class="card-body">
+                        <h5 class="card-title">${rec.titulo}</h5>
+                        <div class="card-text">
+                            ${getListaIngredientes(rec)}
+                            <hr>
+                            <p>${rec.preparo}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function preencheCatalogo() {
+            let pnl = document.getElementById("pnlCatalogo");
+            let htmlCards = receitas.map(rec => getCard(rec)).reduce((acc, curr) => acc + curr, "");
+            pnl.innerHTML = htmlCards;
+        }
+    </script>
+</body>
+</html>

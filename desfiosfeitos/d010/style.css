@@ -47,13 +47,18 @@ nav > a:hover {
     box-shadow:inset 3px 3px 5px rgb(90, 255, 57)
 }
 
+
 #boxdefundo{
     background-color: #226e1b;
     padding: 15px;
 }
 
+.boxcenter img{
+    width: 100%;
+}
+
 .boxcenter{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 246, 246);
     height: auto;
     width: 75%;
     padding: 3px 5px 3px 5px;
@@ -125,6 +130,10 @@ h4{
     margin: -5px;
     padding: 10px;
     border-radius: 15px 15px 0px 0px;
+}
+
+iframe {
+    width: 100%
 }
 
 footer > p{
